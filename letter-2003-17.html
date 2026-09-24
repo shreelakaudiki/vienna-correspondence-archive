@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VCA-2003-17 · Vienna Correspondence Archive</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        .letter-page {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 45px;
+
+            color: #8d8981;
+
+            font-family: Arial, sans-serif;
+            font-size: 9px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            color: #b43d43;
+        }
+
+        .letter-header {
+            padding-bottom: 30px;
+
+            border-bottom: 1px solid #393633;
+        }
+
+        .reference {
+            margin-bottom: 15px;
+
+            font-family: Arial, sans-serif;
+            font-size: 9px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+            color: #77726a;
+        }
+
+        .letter-header h2 {
+            margin: 0;
+
+            font-size: 34px;
+            font-weight: normal;
+
+            color: #ded7cb;
+        }
+
+        .letter-subtitle {
+            margin-top: 8px;
+
+            font-size: 14px;
+            font-style: italic;
+
+            color: #817b72;
+        }
+
+        .letter-meta {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            margin-top: 35px;
+
+            border-top: 1px solid #353331;
+            border-bottom: 1px solid #353331;
+        }
+
+        .meta-item {
+            padding: 17px;
+
+            border-right: 1px solid #353331;
+        }
+
+        .meta-item:last-child {
+            border-right: none;
+        }
+
+        .meta-label {
+            display: block;
+
+            margin-bottom: 5px;
+
+            font-family: Arial, sans-serif;
+            font-size: 8px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+            color: #706b63;
+        }
+
+        .meta-value {
+            font-size: 14px;
+            color: #c7c0b4;
+        }
+
+        .letter-paper {
+            margin-top: 50px;
+
+            padding: 55px 60px;
+
+            background: #d9d1c1;
+
+            color: #302e2a;
+
+            border: 1px solid #766f63;
+
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+        }
+
+        .paper-header {
+            display: flex;
+
+            justify-content: space-between;
+
+            padding-bottom: 18px;
+
+            border-bottom: 1px solid #8d8679;
+
+            font-family: Arial, sans-serif;
+
+            font-size: 9px;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+
+            color: #5e5951;
+        }
+
+        .letter-address {
+            margin-top: 35px;
+
+            font-size: 14px;
+
+            line-height: 1.7;
+
+            color: #403d37;
+        }
+
+        .letter-body {
+            margin-top: 35px;
+
+            font-size: 16px;
+
+            line-height: 1.9;
+
+            color: #37342f;
+        }
+
+        .letter-body p {
+            margin: 0 0 22px;
+        }
+
+        .inventory-reference {
+            margin: 28px 0;
+
+            padding: 15px 18px;
+
+            border-left: 2px solid #777064;
+
+            background: rgba(0, 0, 0, 0.04);
+
+            font-family: Arial, sans-serif;
+
+            font-size: 11px;
+
+            letter-spacing: 1px;
+
+            color: #454139;
+        }
+
+        .signature {
+            margin-top: 35px;
+
+            font-style: italic;
+
+            color: #454139;
+        }
+
+        .archival-note {
+            margin-top: 45px;
+
+            padding: 25px 28px;
+
+            background: #191918;
+
+            border-left: 2px solid #555049;
+        }
+
+        .note-label {
+            margin-bottom: 10px;
+
+            font-family: Arial, sans-serif;
+
+            font-size: 8px;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+
+            color: #777169;
+        }
+
+        .archival-note p {
+            margin: 0;
+
+            font-size: 13px;
+
+            font-style: italic;
+
+            color: #979188;
+        }
+
+        @media (max-width: 700px) {
+
+            .letter-header h2 {
+                font-size: 28px;
+            }
+
+            .letter-meta {
+                grid-template-columns: 1fr;
+            }
+
+            .meta-item {
+                border-right: none;
+                border-bottom: 1px solid #353331;
+            }
+
+            .meta-item:last-child {
+                border-bottom: none;
+            }
+
+            .letter-paper {
+                padding: 35px 25px;
+            }
+
+            .paper-header {
+                flex-direction: column;
+                gap: 8px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<header class="site-header">
+
+    <div class="header-strip">
+
+        <span>VIENNA</span>
+        <span>PRIVATE CORRESPONDENCE</span>
+        <span>2003</span>
+
+    </div>
+
+
+    <div class="header-main">
+
+        <div class="archive-mark">
+            VCA
+        </div>
+
+        <div class="title-block">
+
+            <h1>
+                Vienna Correspondence Archive
+            </h1>
+
+            <p>
+                Private Collection Records &amp; Historical Correspondence
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <nav class="main-nav">
+
+        <a href="index.html">ARCHIVE</a>
+        <a href="#">CORRESPONDENCE</a>
+        <a href="#">COLLECTIONS</a>
+        <a href="#">ABOUT</a>
+
+    </nav>
+
+</header>
+
+
+
+<main>
+
+
+    <div class="letter-page">
+
+        <a href="correspondence-2003.html" class="back-link">
+            ← RETURN TO CORRESPONDENCE
+        </a>
+
+
+        <section class="letter-header">
+
+            <div class="reference">
+                CORRESPONDENCE FILE · VCA-2003-17
+            </div>
+
+            <h2>
+                Unidentified Jewel
+            </h2>
+
+            <p class="letter-subtitle">
+                Private collection correspondence
+            </p>
+
+        </section>
+
+
+
+        <section class="letter-meta">
+
+            <div class="meta-item">
+
+                <span class="meta-label">
+                    Date
+                </span>
+
+                <span class="meta-value">
+                    16 May 2003
+                </span>
+
+            </div>
+
+
+            <div class="meta-item">
+
+                <span class="meta-label">
+                    Location
+                </span>
+
+                <span class="meta-value">
+                    Vienna
+                </span>
+
+            </div>
+
+
+            <div class="meta-item">
+
+                <span class="meta-label">
+                    File
+                </span>
+
+                <span class="meta-value">
+                    VCA-2003-17
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <article class="letter-paper">
+
+
+            <div class="paper-header">
+
+                <span>
+                    Private Correspondence
+                </span>
+
+                <span>
+                    Vienna · 16 May 2003
+                </span>
+
+            </div>
+
+
+
+            <div class="letter-address">
+
+                To: Herr M. Weiss<br>
+
+                Private Collections Office<br>
+
+                Vienna
+
+            </div>
+
+
+
+            <div class="letter-body">
+
+                <p>
+                    Dear Herr Weiss,
+                </p>
+
+
+                <p>
+                    Following our review of the objects retained
+                    in the private collection, I am writing regarding
+                    the unidentified jewel photographed during the
+                    earlier inventory.
+                </p>
+
+
+                <p>
+                    The object remains in the Vienna collection.
+                    Its previous ownership could not be established,
+                    although the accompanying documentation appears
+                    to refer to an earlier European private holding.
+                </p>
+
+
+                <div class="inventory-reference">
+
+                    INVENTORY REFERENCE · V-03-17
+
+                </div>
+
+
+                <p>
+                    Please retain this reference in any future
+                    correspondence concerning the object. No revised
+                    attribution should be entered until the provenance
+                    can be established with greater certainty.
+                </p>
+
+
+                <p>
+                    I have enclosed a copy of the earlier collection
+                    photograph for the file.
+                </p>
+
+
+                <p>
+                    Yours sincerely,
+                </p>
+
+
+                <div class="signature">
+
+                    E. Hartmann<br>
+                    Private Collections Office
+
+                </div>
+
+            </div>
+
+
+        </article>
+
+
+
+        <section class="archival-note">
+
+            <div class="note-label">
+                ARCHIVE NOTE
+            </div>
+
+            <p>
+                Original correspondence retained in the Vienna
+                private collections series. Inventory reference
+                preserved as recorded in the letter.
+            </p>
+
+        </section>
+
+
+    </div>
+
+
+</main>
+
+
+
+<footer>
+
+    <div>
+        VIENNA CORRESPONDENCE ARCHIVE
+    </div>
+
+    <div>
+        PRIVATE COLLECTIONS · HISTORICAL RECORDS
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
