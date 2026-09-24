@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>2003 · Private Collection Correspondence</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        .page {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 45px;
+
+            color: #8d8981;
+
+            font-family: Arial, sans-serif;
+            font-size: 9px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            color: #b43d43;
+        }
+
+        .page-header {
+            padding-bottom: 30px;
+            border-bottom: 1px solid #393633;
+        }
+
+        .reference {
+            margin-bottom: 15px;
+
+            font-family: Arial, sans-serif;
+            font-size: 9px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+            color: #77726a;
+        }
+
+        .page-header h2 {
+            margin: 0;
+
+            font-size: 34px;
+            font-weight: normal;
+
+            color: #ded7cb;
+        }
+
+        .page-header p {
+            margin-top: 8px;
+
+            font-size: 14px;
+            font-style: italic;
+
+            color: #817b72;
+        }
+
+        .archive-info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            margin-top: 35px;
+
+            border-top: 1px solid #353331;
+            border-bottom: 1px solid #353331;
+        }
+
+        .info-item {
+            padding: 17px;
+
+            border-right: 1px solid #353331;
+        }
+
+        .info-item:last-child {
+            border-right: none;
+        }
+
+        .info-label {
+            display: block;
+
+            margin-bottom: 5px;
+
+            font-family: Arial, sans-serif;
+            font-size: 8px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+            color: #706b63;
+        }
+
+        .info-value {
+            font-size: 14px;
+            color: #c7c0b4;
+        }
+
+        .correspondence-list {
+            margin-top: 55px;
+
+            border-top: 1px solid #393633;
+        }
+
+        .list-heading {
+            display: flex;
+            justify-content: space-between;
+
+            padding: 16px 0;
+
+            border-bottom: 1px solid #393633;
+
+            font-family: Arial, sans-serif;
+            font-size: 9px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+            color: #77726a;
+        }
+
+        .letter {
+            display: grid;
+
+            grid-template-columns: 95px 1fr 35px;
+
+            gap: 25px;
+
+            align-items: center;
+
+            padding: 25px 20px;
+
+            border-bottom: 1px solid #2d2b29;
+
+            background: #181818;
+
+            text-decoration: none;
+
+            transition: background 0.2s ease;
+        }
+
+        .letter:hover {
+            background: #1d1c1b;
+        }
+
+        .letter-date {
+            font-family: Arial, sans-serif;
+            font-size: 10px;
+            letter-spacing: 1.2px;
+
+            color: #9a9186;
+        }
+
+        .letter-content h3 {
+            margin: 0 0 6px;
+
+            font-size: 18px;
+            font-weight: normal;
+
+            color: #d8d1c5;
+        }
+
+        .letter-content p {
+            margin: 0;
+
+            font-size: 13px;
+
+            color: #8f8a82;
+        }
+
+        .letter-arrow {
+            font-size: 18px;
+            color: #706a61;
+        }
+
+        .letter:hover .letter-arrow {
+            color: #a33b41;
+        }
+
+        .archive-note {
+            max-width: 720px;
+
+            margin-top: 60px;
+
+            padding: 25px 28px;
+
+            background: #191918;
+
+            border-left: 2px solid #555049;
+        }
+
+        .archive-note h3 {
+            margin: 0 0 10px;
+
+            font-family: Arial, sans-serif;
+            font-size: 8px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: normal;
+
+            color: #777169;
+        }
+
+        .archive-note p {
+            margin: 0;
+
+            font-size: 13px;
+            font-style: italic;
+
+            color: #979188;
+        }
+
+        @media (max-width: 700px) {
+
+            .page-header h2 {
+                font-size: 28px;
+            }
+
+            .archive-info {
+                grid-template-columns: 1fr;
+            }
+
+            .info-item {
+                border-right: none;
+                border-bottom: 1px solid #353331;
+            }
+
+            .info-item:last-child {
+                border-bottom: none;
+            }
+
+            .letter {
+                grid-template-columns: 70px 1fr 20px;
+                gap: 12px;
+                padding: 20px 10px;
+            }
+
+            .letter-content h3 {
+                font-size: 16px;
+            }
+
+            .letter-content p {
+                font-size: 12px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<header class="site-header">
+
+    <div class="header-strip">
+
+        <span>VIENNA</span>
+        <span>PRIVATE CORRESPONDENCE</span>
+        <span>2003</span>
+
+    </div>
+
+
+    <div class="header-main">
+
+        <div class="archive-mark">
+            VCA
+        </div>
+
+        <div class="title-block">
+
+            <h1>
+                Vienna Correspondence Archive
+            </h1>
+
+            <p>
+                Private Collection Records &amp; Historical Correspondence
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <nav class="main-nav">
+
+        <a href="index.html">ARCHIVE</a>
+        <a href="#">CORRESPONDENCE</a>
+        <a href="#">COLLECTIONS</a>
+        <a href="#">ABOUT</a>
+
+    </nav>
+
+</header>
+
+
+
+<main>
+
+
+    <div class="page">
+
+        <a href="index.html" class="back-link">
+            ← RETURN TO ARCHIVE
+        </a>
+
+
+        <section class="page-header">
+
+            <div class="reference">
+                CORRESPONDENCE SERIES · 2003
+            </div>
+
+            <h2>
+                Private Collection Correspondence
+            </h2>
+
+            <p>
+                Selected correspondence relating to privately
+                held objects and collections in Vienna.
+            </p>
+
+        </section>
+
+
+
+        <section class="archive-info">
+
+            <div class="info-item">
+
+                <span class="info-label">
+                    Year
+                </span>
+
+                <span class="info-value">
+                    2003
+                </span>
+
+            </div>
+
+
+            <div class="info-item">
+
+                <span class="info-label">
+                    Location
+                </span>
+
+                <span class="info-value">
+                    Vienna
+                </span>
+
+            </div>
+
+
+            <div class="info-item">
+
+                <span class="info-label">
+                    Records
+                </span>
+
+                <span class="info-value">
+                    8 Correspondence Files
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="correspondence-list">
+
+            <div class="list-heading">
+
+                <span>
+                    CORRESPONDENCE RECORD
+                </span>
+
+                <span>
+                    2003
+                </span>
+
+            </div>
+
+
+
+            <a href="#" class="letter">
+
+                <div class="letter-date">
+                    08 JAN
+                </div>
+
+                <div class="letter-content">
+
+                    <h3>
+                        Insurance Renewal
+                    </h3>
+
+                    <p>
+                        Correspondence concerning the annual
+                        insurance review of privately held objects.
+                    </p>
+
+                </div>
+
+                <div class="letter-arrow">
+                    →
+                </div>
+
+            </a>
+
+
+
+            <a href="#" class="letter">
+
+                <div class="letter-date">
+                    19 FEB
+                </div>
+
+                <div class="letter-content">
+
+                    <h3>
+                        Silver Collection
+                    </h3>
+
+                    <p>
+                        Notes concerning the valuation of a
+                        nineteenth-century silver service.
+                    </p>
+
+                </div>
+
+                <div class="letter-arrow">
+                    →
+                </div>
+
+            </a>
+
+
+
+            <a href="#" class="letter">
+
+                <div class="letter-date">
+                    04 MAR
+                </div>
+
+                <div class="letter-content">
+
+                    <h3>
+                        Restoration Appointment
+                    </h3>
+
+                    <p>
+                        Arrangements concerning restoration
+                        work on several decorative objects.
+                    </p>
+
+                </div>
+
+                <div class="letter-arrow">
+                    →
+                </div>
+
+            </a>
+
+
+
+            <a href="#" class="letter">
+
+                <div class="letter-date">
+                    27 APR
+                </div>
+
+                <div class="letter-content">
+
+                    <h3>
+                        Estate Furniture
+                    </h3>
+
+                    <p>
+                        Correspondence regarding the transfer
+                        of furniture from a private residence.
+                    </p>
+
+                </div>
+
+                <div class="letter-arrow">
+                    →
+                </div>
+
+            </a>
+
+
+
+            <a href="letter-2003-17.html" class="letter">
+
+                <div class="letter-date">
+                    16 MAY
+                </div>
+
+                <div class="letter-content">
+
+                    <h3>
+                        Unidentified Jewel
+                    </h3>
+
+                    <p>
+                        Correspondence concerning an unusual
+                        jewel retained within a private collection.
+                    </p>
+
+                </div>
+
+                <div class="letter-arrow">
+                    →
+                </div>
+
+            </a>
+
+
+
+            <a href="#" class="letter">
+
+                <div class="letter-date">
+                    03 JUN
+                </div>
+
+                <div class="letter-content">
+
+                    <h3>
+                        European Ceramics
+                    </h3>
+
+                    <p>
+                        Notes exchanged regarding several
+                        privately held ceramic objects.
+                    </p>
+
+                </div>
+
+                <div class="letter-arrow">
+                    →
+                </div>
+
+            </a>
+
+
+
+            <a href="#" class="letter">
+
+                <div class="letter-date">
+                    22 AUG
+                </div>
+
+                <div class="letter-content">
+
+                    <h3>
+                        Collection Insurance
+                    </h3>
+
+                    <p>
+                        Correspondence concerning revised
+                        valuations for selected holdings.
+                    </p>
+
+                </div>
+
+                <div class="letter-arrow">
+                    →
+                </div>
+
+            </a>
+
+
+
+            <a href="#" class="letter">
+
+                <div class="letter-date">
+                    11 NOV
+                </div>
+
+                <div class="letter-content">
+
+                    <h3>
+                        Private Exhibition Notes
+                    </h3>
+
+                    <p>
+                        Correspondence concerning the display
+                        of selected European objects.
+                    </p>
+
+                </div>
+
+                <div class="letter-arrow">
+                    →
+                </div>
+
+            </a>
+
+
+        </section>
+
+
+
+        <section class="archive-note">
+
+            <h3>
+                Archive Note
+            </h3>
+
+            <p>
+                Correspondence files are arranged according to
+                surviving date and subject information. Several
+                original envelopes were not retained.
+            </p>
+
+        </section>
+
+
+    </div>
+
+
+</main>
+
+
+
+<footer>
+
+    <div>
+        VIENNA CORRESPONDENCE ARCHIVE
+    </div>
+
+    <div>
+        PRIVATE COLLECTIONS · HISTORICAL RECORDS
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
